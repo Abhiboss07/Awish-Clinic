@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Awish Clinic - Premium Aesthetic & Surgery Treatments</title>
+  <meta name="description" content="Explore Awish Clinic's 11+ dermatological and surgical treatments across Delhi NCR, Gurugram, and Jaipur. FUE hair transplant, acne scars, medi-facials, bariatric, and cosmetic surgery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Effect -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-glow" id="customCursorGlow"></div>
+
+  <!-- Navigation Header -->
+  <header class="main-header scrolled" id="mainHeader">
+    <div class="header-container">
+      <a href="index.html" class="logo" id="headerLogo">
+        <span class="logo-accent">AWISH</span>
+        <span class="logo-sub">CLINIC</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">Clinic</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-glow" id="navCTA">Book Consultation</a>
+        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Header -->
+  <section class="subpage-header">
+    <div class="section-container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Services & Treatments</span>
+      </div>
+      <h1 class="hud-title" style="text-align: center; margin-bottom: 1rem;">CLINICAL SERVICES</h1>
+      <p class="section-desc" style="margin: 0 auto; max-width: 700px;">Dermatologist-led pathways designed around your aesthetic and wellness goals.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid Section with Filters -->
+  <section class="all-services-section">
+    <div class="section-container">
+      
+      <!-- Category Tabs Selector -->
+      <div class="tab-filters" id="serviceTabs" style="margin-bottom: 4rem;">
+        <button class="tab-btn active" data-filter="all">All Treatments</button>
+        <button class="tab-btn" data-filter="surgical">Surgical / Aesthetic</button>
+        <button class="tab-btn" data-filter="skin-hair">Skin & Hair</button>
+        <button class="tab-btn" data-filter="weight">Weight Management</button>
+      </div>
+
+      <div class="services-grid" id="servicesGrid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
+        
+        <!-- Service 1: Breast Reduction (Surgical) -->
+        <div class="service-card glass" data-category="surgical" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Surgical / Aesthetic</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Breast Reduction</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Relief from physical back strain and anatomical discomfort through expert, highly specialized reduction procedures in Delhi.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Expert breast reduction planning</li>
+              <li>• Significant symptom relief</li>
+              <li>• Private post-operative checkups</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 2: Breast Enlargement (Surgical) -->
+        <div class="service-card glass" data-category="surgical" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Surgical / Aesthetic</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Breast Enlargement</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Natural-looking breast augmentation tailored specifically to your body goals, using safe techniques and complete privacy.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Dynamic size & profile planning</li>
+              <li>• US-FDA approved safe implants</li>
+              <li>• Completely private suite recovery</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 3: FUE Hair Transplant (Surgical) -->
+        <div class="service-card glass" data-category="surgical" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Surgical / Aesthetic</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">FUE Hair Transplant</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Natural-looking follicular unit extraction hair restoration. Re-establish crown density and custom hair lines with high follicle survival rates.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• High survival rate grafts</li>
+              <li>• Minimally invasive extraction</li>
+              <li>• Natural structural hair angles</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 4: Rhinoplasty (Surgical) -->
+        <div class="service-card glass" data-category="surgical" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Surgical / Aesthetic</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Rhinoplasty</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Nose reshaping to enhance facial symmetry, adjust nasal bridges, and improve structural breathing patterns in Delhi.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Custom structural balance</li>
+              <li>• Combined functional and cosmetic planning</li>
+              <li>• Board-certified surgical lead</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 5: Dimple Creation (Surgical) -->
+        <div class="service-card glass" data-category="surgical" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Surgical / Aesthetic</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Dimple Creation</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">A quick, outpatient procedure to create natural-looking cheek dimples with precise micro-suturing techniques.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Quick, same-day discharge</li>
+              <li>• Done under local numbing</li>
+              <li>• Custom symmetrical cheek planning</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 6: Facelift & Tightening (Surgical) -->
+        <div class="service-card glass" data-category="surgical" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Surgical / Aesthetic</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Facelift Surgery</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Look refreshed and completely natural. Relieve skin laxity, restore midface volume, and contour jawlines safely.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Subtle, non-windblown results</li>
+              <li>• Tightens deep muscle layers</li>
+              <li>• Invisible, hidden incisions</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 7: Blepharoplasty (Surgical) -->
+        <div class="service-card glass" data-category="surgical" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Surgical / Aesthetic</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Blepharoplasty</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Remove heavy eye bags and drooping eyelids to reveal a well-rested, youthful, and naturally brightened gaze.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Clear droopy lid obstructions</li>
+              <li>• Smooth persistent eye hollows</li>
+              <li>• Rapid, comfortable healing</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 8: White Glow (Skin & Hair) -->
+        <div class="service-card glass" data-category="skin-hair" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Skin & Hair</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">White Glow Therapy</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Medical-grade skin brightening and rejuvenation targeting deep vascular hyperpigmentation, severe sunburn, and dull tone.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Bespoke dermal salicylic peels</li>
+              <li>• Concentrated antioxidant cocktails</li>
+              <li>• Deep clinical cell exfoliation</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 9: Pimple Scar Treatment (Skin & Hair) -->
+        <div class="service-card glass" data-category="skin-hair" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Skin & Hair</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Pimple Scar Treatment</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Reduce deep-pitted acne scars (boxcar, icepick, rolling) and refine rough texture with dermatologist-grade resurfacing plans.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• RF Microneedling stimulation</li>
+              <li>• Fractional laser skin peeling</li>
+              <li>• Subcision for deep-set anchor fibers</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 10: Anti-Aging Treatments (Skin & Hair) -->
+        <div class="service-card glass" data-category="skin-hair" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Skin & Hair</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Anti-Aging Treatments</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Botox, premium fillers, and thread lifts designed to restore natural volume, lift cheeks, and erase heavy fine lines.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Botox wrinkle relaxation</li>
+              <li>• Hyaluronic volume fillers</li>
+              <li>• Easing crow's feet and smile lines</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 11: Laser Hair Removal (Skin & Hair) -->
+        <div class="service-card glass" data-category="skin-hair" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Skin & Hair</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Laser Hair Removal</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Permanent body hair reduction using FDA-approved, triple-wavelength cooling laser systems. Safe for all skin tones.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Painless cooling laser tips</li>
+              <li>• Effective full body packages</li>
+              <li>• Minimal sessions, long-term smooth finish</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 12: Medi-Facials (Skin & Hair) -->
+        <div class="service-card glass" data-category="skin-hair" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Skin & Hair</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Medi-Facials</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Medical-grade facial treatments (HydraFacial, glowing peels) utilizing clinically-active ingredients to restore skin health.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Deep vacuum blackhead extraction</li>
+              <li>• Peptide dermal hydration locks</li>
+              <li>• Professional, sterile clinical protocols</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 13: IV Drips / Skin Whitening (Skin & Hair) -->
+        <div class="service-card glass" data-category="skin-hair" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Skin & Hair</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">IV Drip Rejuvenation</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Glutathione, vitamin C, and multi-vitamin cellular drips to boost systemic radiance, vitality, and skin hydration from within.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• 100% absorption glutathione</li>
+              <li>• Anti-aging cellular cellular repair</li>
+              <li>• Supervised, safe medical setting</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 14: Overweight Treatment (Weight) -->
+        <div class="service-card glass" data-category="weight" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Weight Management</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Overweight Diagnosis</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Dermatologist and endocrinologist consultation to assess your BMI, hormones, and thyroid parameters to target root weight gain causes.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Hormone and lipid profiling</li>
+              <li>• Insulin resistance diagnostics</li>
+              <li>• No-obligation candidacy review</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 15: Non-Surgical Weight Reduction (Weight) -->
+        <div class="service-card glass" data-category="weight" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Weight Management</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Non-Surgical Reduction</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Structured medical weight loss programs combining personalized diet synergy, fat crystallization cryolipolysis, and metabolic coaching.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• -11°C Cryolipolysis fat freezing</li>
+              <li>• High-intensity muscle EMS toning</li>
+              <li>• Continuous medical monitoring</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+        <!-- Service 16: Surgical Weight Reduction (Weight) -->
+        <div class="service-card glass" data-category="weight" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span class="service-card-tag">Weight Management</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 1rem;">Surgical Weight (Bariatric)</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Expert gastric sleeve and gastric bypass surgeries for patients with clinically significant obesity and metabolic syndromes.</p>
+            <ul class="service-features" style="list-style: none; padding: 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+              <li>• Comprehensive pre-surgical panels</li>
+              <li>• Highly experienced bariatric surgical leads</li>
+              <li>• Dedicated, long-term post-op nutritional guides</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn-card" style="text-align: center;">Book Consultation</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Footer -->
+  <footer class="premium-footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand-info">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-accent">AWISH</span>
+            <span class="logo-sub">CLINIC</span>
+          </a>
+          <p class="footer-tagline">Premium Medical Aesthetics, Skincare, & Hormonal Wellness. Bridging clinical science with ultra-luxurious care.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+              <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="1.5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="1.5" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="1.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke-width="1.5" />
+                <circle cx="4" cy="4" r="2" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Clinical Services</h4>
+          <ul>
+            <li><a href="services.html">FUE Hair Transplant</a></li>
+            <li><a href="services.html">Pimple Scar Treatment</a></li>
+            <li><a href="services.html">Anti-Aging Treatments</a></li>
+            <li><a href="services.html">Laser Hair Removal</a></li>
+            <li><a href="services.html">Belly Cryo-Sculpt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Clinic Hours</h4>
+          <ul>
+            <li>Mon - Sun: 10:00 AM - 8:00 PM</li>
+            <li>Available 7 Days a Week</li>
+            <li>Phone: +91 82876 40479</li>
+            <li>Email: awishclinics@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Primary Clinic</h4>
+          <p class="footer-addr">L-5, 5, Pocket L, Sarita Vihar,<br>New Delhi, Delhi 110076</p>
+          <a href="contact.html" class="btn btn-footer-map">Locations & Booking</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Awish Clinic. All Rights Reserved. Affordable care. Premium feel.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Medical Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
