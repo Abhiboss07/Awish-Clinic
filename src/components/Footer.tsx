@@ -5,21 +5,21 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-clinic-bg border-t border-slate-900 overflow-hidden z-10">
+    <footer className="relative bg-white border-t border-slate-100 overflow-hidden z-10">
       {/* Background Decorative Ambient Orb */}
-      <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-brand-pink/5 blur-[120px] pointer-events-none" />
-      <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-brand-gold/5 blur-[120px] pointer-events-none" />
+      <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-brand-teal/3 blur-[120px] pointer-events-none" />
+      <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-brand-lavender/3 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           
           {/* Brand Info Column */}
           <div className="flex flex-col gap-6">
-            <Link href="/" className="flex flex-col w-fit group">
-              <span className="font-serif text-3xl font-bold tracking-wide text-white group-hover:text-brand-pink transition-colors">
+            <Link href="/" className="flex flex-col w-fit group select-none">
+              <span className="font-serif text-3xl font-bold tracking-wide text-clinic-dark group-hover:text-brand-teal transition-colors">
                 AWISH
               </span>
-              <span className="text-[10px] font-semibold tracking-[0.35em] text-brand-pink -mt-1 uppercase">
+              <span className="text-[10px] font-bold tracking-[0.35em] text-brand-teal -mt-1 uppercase">
                 CLINIC
               </span>
             </Link>
@@ -32,7 +32,7 @@ export default function Footer() {
                 <a
                   key={social}
                   href="#"
-                  className="text-slate-500 hover:text-brand-pink text-xs font-semibold uppercase tracking-wider transition-colors duration-300"
+                  className="text-slate-450 hover:text-brand-teal text-xs font-bold uppercase tracking-wider transition-colors duration-300"
                 >
                   {social}
                 </a>
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* Quick Links Column */}
           <div className="flex flex-col gap-6">
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider">
+            <h4 className="text-clinic-dark font-bold text-xs uppercase tracking-widest">
               Quick Links
             </h4>
             <ul className="flex flex-col gap-3">
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-clinic-secondary hover:text-brand-pink text-[14px] transition-colors duration-300 font-light"
+                    className="text-clinic-secondary hover:text-brand-teal text-[14px] transition-colors duration-300 font-light"
                   >
                     {link.name}
                   </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Core Services Column */}
           <div className="flex flex-col gap-6">
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider">
+            <h4 className="text-clinic-dark font-bold text-xs uppercase tracking-widest">
               Clinical Services
             </h4>
             <ul className="flex flex-col gap-3">
@@ -84,7 +84,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-clinic-secondary hover:text-brand-pink text-[14px] transition-colors duration-300 font-light"
+                    className="text-clinic-secondary hover:text-brand-teal text-[14px] transition-colors duration-300 font-light"
                   >
                     {link.name}
                   </Link>
@@ -95,34 +95,34 @@ export default function Footer() {
 
           {/* Contact Details Column */}
           <div className="flex flex-col gap-6">
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider">
+            <h4 className="text-clinic-dark font-bold text-xs uppercase tracking-widest">
               Primary Clinic
             </h4>
             <ul className="flex flex-col gap-4 text-clinic-secondary text-[14px] font-light">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-brand-pink shrink-0 mt-1" />
+                <MapPin className="w-4 h-4 text-brand-teal shrink-0 mt-1" />
                 <span>
                   L-5, 5, Pocket L, Sarita Vihar,<br />
                   New Delhi, Delhi 110076, India
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <PhoneCall className="w-4 h-4 text-brand-pink shrink-0" />
-                <a href="tel:+918287640479" className="hover:text-brand-pink transition-colors">
+                <PhoneCall className="w-4 h-4 text-brand-teal shrink-0" />
+                <a href="tel:+918287640479" className="hover:text-brand-teal transition-colors">
                   +91 82876 40479
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-brand-pink shrink-0" />
-                <a href="mailto:awishclinics@gmail.com" className="hover:text-brand-pink transition-colors">
+                <Mail className="w-4 h-4 text-brand-teal shrink-0" />
+                <a href="mailto:awishclinics@gmail.com" className="hover:text-brand-teal transition-colors">
                   awishclinics@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="w-4 h-4 text-brand-pink shrink-0 mt-1" />
+                <Clock className="w-4 h-4 text-brand-teal shrink-0 mt-1" />
                 <span>
                   Mon - Sun: 10:00 AM - 8:00 PM<br />
-                  <span className="text-[11px] text-brand-pink font-semibold tracking-wide uppercase mt-1 block">Open 7 Days</span>
+                  <span className="text-[10px] text-brand-teal font-bold tracking-widest uppercase mt-1.5 block">Open 7 Days</span>
                 </span>
               </li>
             </ul>
@@ -131,14 +131,14 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom Legal */}
-        <div className="mt-16 pt-8 border-t border-slate-900/60 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-slate-500 text-xs font-light">
+        <div className="mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-slate-400 text-xs font-light">
             &copy; {currentYear} Awish Clinic. All Rights Reserved. Affordable care. Premium feel.
           </p>
-          <div className="flex items-center gap-6 text-xs text-slate-500 font-light">
-            <a href="#" className="hover:text-brand-pink transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-brand-pink transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-brand-pink transition-colors">Medical Disclaimer</a>
+          <div className="flex items-center gap-6 text-xs text-slate-400 font-light">
+            <a href="#" className="hover:text-brand-teal transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-brand-teal transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-brand-teal transition-colors">Medical Disclaimer</a>
           </div>
         </div>
       </div>
