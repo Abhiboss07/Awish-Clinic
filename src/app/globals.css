@@ -6,73 +6,75 @@
   --font-sans: 'Outfit', sans-serif;
   --font-serif: 'Playfair Display', serif;
   
-  /* Brand Theme Accent Colors (Neon Crimson & Luxury champagne gold matching awishclinic.com) */
-  --color-brand-blue: #ff003c; /* Neon Crimson */
-  --color-brand-purple: #9333ea;
-  --color-brand-pink: #ff003c; /* Neon Crimson */
-  --color-brand-gold: #c5a880; /* Luxury champagne gold */
+  /* Brand Theme Accent Colors (Ultra-Premium Light Clinical System) */
+  --color-brand-teal: #0d9488; /* Vibrant Clinical Teal */
+  --color-brand-lavender: #8b5cf6; /* Luxury Lavender Purple */
+  --color-brand-pink: #14b8a6; /* Map brand-pink utility to Teal for backward compatibility */
+  --color-brand-gold: #a78bfa; /* Map brand-gold utility to Lavender for backward compatibility */
+  --color-brand-sky: #0ea5e9; /* Sky Blue accent */
+  --color-brand-rose: #ec4899; /* Soft Pink accent */
   
   /* Global Theme Backdrops, Text & Borders */
-  --color-clinic-bg: #050508; /* Deep clinical slate black */
-  --color-clinic-dark: #ffffff; /* Bright high-contrast white text */
-  --color-clinic-secondary: #a0aec0; /* Muted gray text for readability */
-  --color-clinic-muted: #4e5566; /* Deep slate muted text */
-  --color-clinic-border: rgba(255, 255, 255, 0.08); /* Fine slate border line */
-  --color-clinic-glass: rgba(11, 15, 25, 0.7); /* Deep slate-glass backdrop */
+  --color-clinic-bg: #ffffff; /* Pure White background */
+  --color-clinic-dark: #0f172a; /* Deep Slate-900 absolute text */
+  --color-clinic-secondary: #475569; /* Slate-600 elegant subtext */
+  --color-clinic-muted: #94a3b8; /* Slate-400 muted text */
+  --color-clinic-border: rgba(20, 184, 166, 0.08); /* Clean light teal-cyan borders */
+  --color-clinic-glass: rgba(255, 255, 255, 0.7); /* Frosted luxury glass white backdrop */
 
-  /* Direct Tailwind utility mapping overrides to map slate colors to premium dark mode */
-  --color-slate-950: #050508; /* Solid slate black backgrounds */
-  --color-slate-900: #08090d; /* Deep slate blue/black panels */
-  --color-slate-850: rgba(255, 255, 255, 0.06); /* Fine borders */
-  --color-slate-800: rgba(255, 255, 255, 0.08); /* Fine borders */
-  --color-slate-700: #a0aec0; /* Muted gray text */
-  --color-slate-350: #a0aec0; /* Readability gray text */
-  --color-slate-300: #e2e8f0; /* Off-white title text */
-  --color-slate-200: #ffffff; /* Bright high-contrast white text */
+  /* Direct Tailwind utility mapping overrides to map slate blocks to Light Theme instantly */
+  --color-slate-950: #ffffff; /* Pure White cards */
+  --color-slate-900: #f8fafc; /* Very light slate-teal panel backdrop */
+  --color-slate-850: #f1f5f9; /* Muted light gray borders */
+  --color-slate-800: #f1f5f9; /* Muted light gray borders */
+  --color-slate-700: #475569; /* Charcoal elegant subtext */
+  --color-slate-350: #334155; /* Charcoal body text */
+  --color-slate-300: #1e293b; /* Deep slate title text */
+  --color-slate-200: #0f172a; /* Slate-900 absolute dark text */
 }
 
 :root {
   --font-sans: 'Outfit', sans-serif;
 }
 
-/* Custom Scrollbar Styles (Dark Premium Theme matching awishclinic.com) */
+/* Custom Scrollbar Styles (Clean Minimalist Luxury Theme) */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #08090d; /* Deep slate blue/black backdrop */
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4e5566; /* Deep slate muted */
-  border-radius: 4px;
+  background: #cbd5e1; /* Extremely soft grey */
+  border-radius: 99px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a0aec0;
+  background: #94a3b8;
 }
 
-/* Glassmorphism helpers (Dark Premium Theme matching awishclinic.com) */
+/* Glassmorphism helpers (Clean Premium Light Theme) */
 .glass-panel {
   background: var(--color-clinic-glass);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(20, 184, 166, 0.09);
   box-shadow: 
-    0 20px 50px rgba(0, 0, 0, 0.5),
-    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    0 10px 30px rgba(15, 23, 42, 0.02),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .glass-hud {
-  background: rgba(11, 15, 25, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 
-    0 30px 100px rgba(0, 0, 0, 0.6),
-    inset 0 1px 2px rgba(255, 255, 255, 0.15);
+    0 12px 40px rgba(148, 163, 184, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.95);
 }
 
 /* Lenis Smooth Scroll styling */
@@ -96,23 +98,30 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-/* Subtle Animated Infographic Hotspots */
+/* Symmetrical Infographic Hotspots */
 .hotspot-ring {
-  animation: pulse-ring 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  animation: pulse-ring 2.4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
 
 @keyframes pulse-ring {
-  0% { transform: scale(0.5); opacity: 1; }
-  80%, 100% { transform: scale(2.2); opacity: 0; }
+  0% { transform: scale(0.5); opacity: 0.9; }
+  80%, 100% { transform: scale(2.0); opacity: 0; }
 }
 
-/* Smooth ambient floating layers (optimized for dark theme) */
+/* Ambient gradient lighting (Aurora/Mesh gradients optimized for Light Theme) */
 .ambient-glow {
   position: absolute;
   border-radius: 50%;
-  mix-blend-mode: screen;
-  filter: blur(130px);
+  mix-blend-mode: multiply;
+  filter: blur(120px);
   pointer-events: none;
-  opacity: 0.12;
+  opacity: 0.05;
   z-index: 1;
+}
+
+.aurora-mesh {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(20, 184, 166, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.03) 0%, transparent 50%);
 }
