@@ -183,21 +183,21 @@ export default function HeroVisualizer() {
       className="relative w-full max-w-[1440px] xl:max-w-[1650px] mx-auto py-8 px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between min-h-[85vh] z-10 overflow-visible gap-12"
     >
       {/* Decorative Blur Background Layers */}
-      <div className="absolute top-10 left-10 w-96 h-96 rounded-full bg-brand-pink/5 blur-[120px] pointer-events-none -z-10" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-brand-gold/5 blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute top-10 left-10 w-96 h-96 rounded-full bg-brand-teal/4 blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-brand-lavender/4 blur-[120px] pointer-events-none -z-10" />
 
       {/* LEFT COLUMN: Hero Text Content & Credentials (Always visible, stable and high-performance) */}
       <div className="w-full lg:w-[32%] flex flex-col justify-center order-2 lg:order-1 z-30 min-h-[420px] lg:min-h-[520px] lg:-translate-x-2 xl:-translate-x-4 2xl:-translate-x-6">
         <div className="w-full flex flex-col gap-5 text-left items-start animate-fade-in">
           <div className="flex items-center gap-2 animate-pulse">
-            <span className="inline-flex rounded-full border border-brand-pink/20 bg-brand-pink/5 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-brand-pink backdrop-blur">
+            <span className="inline-flex rounded-full border border-brand-teal/20 bg-brand-teal/5 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-brand-teal backdrop-blur">
               DELHI • GURUGRAM • JAIPUR
             </span>
           </div>
           
-          <h1 className="font-sans text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.02] tracking-tight uppercase text-white">
+          <h1 className="font-sans text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.02] tracking-tight uppercase text-clinic-dark">
             High-Science <br/>
-            <span className="font-serif italic text-brand-gold font-normal lowercase tracking-normal">Aesthetic</span> <br/>
+            <span className="font-serif italic text-brand-lavender font-normal lowercase tracking-normal">Aesthetic</span> <br/>
             Restoration.
           </h1>
           
@@ -206,26 +206,26 @@ export default function HeroVisualizer() {
           </p>
 
           {/* Trust Indicators Grid */}
-          <div className="grid grid-cols-2 gap-5 border-t border-slate-900 pt-6 mt-4 max-w-lg w-full">
+          <div className="grid grid-cols-2 gap-5 border-t border-slate-200 pt-6 mt-4 max-w-lg w-full">
             <div className="flex items-start gap-2.5">
-              <div className="w-5 h-5 rounded-full bg-brand-pink/15 flex items-center justify-center shrink-0 text-brand-pink font-serif text-[10px] font-bold">MD</div>
+              <div className="w-5 h-5 rounded-full bg-brand-teal/15 flex items-center justify-center shrink-0 text-brand-teal font-serif text-[10px] font-bold">MD</div>
               <div>
                 <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Board Certified</h4>
-                <p className="text-xs text-slate-350 font-light mt-0.5">MBBS, MD Dermatologists</p>
+                <p className="text-xs text-slate-600 font-light mt-0.5">MBBS, MD Dermatologists</p>
               </div>
             </div>
             <div className="flex items-start gap-2.5">
-              <div className="w-5 h-5 rounded-full bg-brand-gold/15 flex items-center justify-center shrink-0 text-brand-gold font-serif text-[10px] font-bold">FDA</div>
+              <div className="w-5 h-5 rounded-full bg-brand-lavender/15 flex items-center justify-center shrink-0 text-brand-lavender font-serif text-[10px] font-bold">FDA</div>
               <div>
                 <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Advanced Tech</h4>
-                <p className="text-xs text-slate-350 font-light mt-0.5">US-FDA Approved Lasers</p>
+                <p className="text-xs text-slate-600 font-light mt-0.5">US-FDA Approved Lasers</p>
               </div>
             </div>
             <div className="flex items-start gap-2.5 col-span-2">
-              <div className="w-5 h-5 rounded-full bg-brand-pink/10 flex items-center justify-center shrink-0 text-brand-pink font-serif text-[10px] font-bold">★</div>
+              <div className="w-5 h-5 rounded-full bg-brand-teal/10 flex items-center justify-center shrink-0 text-brand-teal font-serif text-[10px] font-bold">★</div>
               <div>
                 <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Proven Excellence</h4>
-                <p className="text-xs text-slate-350 font-light mt-0.5">30,000+ Happy Patients & 7-Day Care Accessibility</p>
+                <p className="text-xs text-slate-650 font-light mt-0.5">30,000+ Happy Patients & 7-Day Care Accessibility</p>
               </div>
             </div>
           </div>
@@ -234,13 +234,13 @@ export default function HeroVisualizer() {
           <div className="flex items-center gap-4 mt-8 flex-wrap">
             <Link 
               href="#services" 
-              className="inline-flex items-center justify-center font-semibold rounded-full border border-slate-800 bg-[#08090d]/60 text-slate-200 hover:bg-slate-900 transition-colors px-6 py-4 text-xs uppercase tracking-wider"
+              className="inline-flex items-center justify-center font-semibold rounded-full border border-slate-200 bg-white/60 text-slate-700 hover:bg-slate-50 transition-colors px-6 py-4 text-xs uppercase tracking-wider"
             >
               Explore Treatments
             </Link>
             <Link 
               href="/contact#booking" 
-              className="inline-flex items-center justify-center font-semibold rounded-full bg-brand-pink text-white hover:bg-rose-700 shadow-md shadow-rose-950/20 transition-all duration-300 px-6 py-4 text-xs uppercase tracking-wider"
+              className="inline-flex items-center justify-center font-bold rounded-full bg-gradient-to-r from-brand-teal to-brand-lavender text-white hover:opacity-95 shadow-md shadow-teal-500/10 hover:shadow-lg hover:shadow-teal-500/20 transition-all duration-300 px-6 py-4 text-xs uppercase tracking-widest"
             >
               Book Consultation
             </Link>
@@ -284,9 +284,9 @@ export default function HeroVisualizer() {
                 >
                   <div className="relative w-5 h-5 flex items-center justify-center">
                     <div className={`dot-core w-3 h-3 rounded-full transition-all duration-300 ${
-                      isActive || isHovered ? "bg-brand-pink scale-125" : "bg-brand-pink/70"
-                    } shadow-md shadow-rose-600/40`} />
-                    <div className="absolute inset-0 rounded-full border border-brand-pink/50 hotspot-ring pointer-events-none" />
+                      isActive || isHovered ? "bg-brand-teal scale-125" : "bg-brand-teal/70"
+                    } shadow-md shadow-teal-500/40`} />
+                    <div className="absolute inset-0 rounded-full border border-brand-teal/50 hotspot-ring pointer-events-none" />
                   </div>
                   
                   {/* Floating Micro Tag Tooltip */}
@@ -296,7 +296,7 @@ export default function HeroVisualizer() {
                         initial={{ opacity: 0, scale: 0.9, x: -20 }}
                         animate={{ opacity: 1, scale: 1, x: -10 }}
                         exit={{ opacity: 0, scale: 0.9, x: -20 }}
-                        className="absolute right-full top-1/2 transform -translate-y-1/2 bg-slate-900 border border-slate-800 text-white text-[11px] font-semibold tracking-wider uppercase px-2.5 py-1.5 rounded-md whitespace-nowrap shadow-md z-50 pointer-events-none"
+                        className="absolute right-full top-1/2 transform -translate-y-1/2 bg-[#0f172a] border border-[#0f172a] text-white text-[11px] font-semibold tracking-wider uppercase px-2.5 py-1.5 rounded-md whitespace-nowrap shadow-md z-50 pointer-events-none"
                       >
                         {spot.title}
                       </motion.div>
@@ -314,7 +314,7 @@ export default function HeroVisualizer() {
                         className="absolute right-full top-1/2 transform -translate-y-1/2 mr-4 md:mr-6 w-[290px] sm:w-[320px] md:w-[360px] text-left font-sans z-50 cursor-default"
                         onClick={(e) => e.stopPropagation()} // Prevent closing when tapping inside the card
                       >
-                        <div className="relative glass-panel rounded-[20px] p-6 bg-[#08090d]/95 backdrop-blur-md border border-slate-800/80 shadow-2xl border-r-[4px] border-r-brand-pink">
+                        <div className="relative glass-panel rounded-[20px] p-6 bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-2xl shadow-slate-300/30 border-r-[4px] border-r-brand-teal">
                           {/* Close Button */}
                           <button
                             onClick={(e) => {
@@ -322,17 +322,17 @@ export default function HeroVisualizer() {
                               setActivePart(null);
                               setActiveSide(null);
                             }}
-                            className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
+                            className="absolute top-4 right-4 text-slate-400 hover:text-brand-teal transition-colors animate-fade-in"
                           >
                             <X className="w-4 h-4" />
                           </button>
 
-                          <div className="flex flex-col gap-4 text-slate-200">
-                            <div className="border-b border-slate-900/60 pb-2 flex flex-col gap-1 text-left">
-                              <span className="inline-flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full w-fit bg-brand-pink/15 text-brand-pink border border-brand-pink/30">
+                          <div className="flex flex-col gap-4 text-slate-700">
+                            <div className="border-b border-slate-100 pb-2 flex flex-col gap-1 text-left">
+                              <span className="inline-flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full w-fit bg-brand-teal/10 text-brand-teal border border-brand-teal/20">
                                 Male Diagnostics
                               </span>
-                              <h3 className="font-serif text-lg font-bold tracking-wide text-white">
+                              <h3 className="font-serif text-lg font-bold tracking-wide text-slate-900">
                                 {spot.title}
                               </h3>
                             </div>
@@ -340,14 +340,14 @@ export default function HeroVisualizer() {
                             {/* Concerns */}
                             <div className="flex flex-col gap-1 text-left">
                               <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1">
-                                <ShieldAlert className="w-3 h-3 text-brand-pink" />
+                                <ShieldAlert className="w-3 h-3 text-brand-teal" />
                                 Clinical Concerns
                               </span>
                               <div className="flex flex-wrap gap-1 mt-0.5">
                                 {spot.concerns.map((c) => (
                                   <span
                                     key={c}
-                                    className="text-[10px] bg-slate-950/60 border border-slate-850 text-slate-350 px-2 py-0.5 rounded font-medium"
+                                    className="text-[10px] bg-slate-50 border border-slate-200/60 text-slate-600 px-2 py-0.5 rounded font-medium"
                                   >
                                     {c}
                                   </span>
@@ -357,15 +357,15 @@ export default function HeroVisualizer() {
 
                             {/* Resolutions */}
                             <div className="flex flex-col gap-1 text-left">
-                              <span className="text-[9px] font-bold text-brand-gold uppercase tracking-wider flex items-center gap-1">
-                                <Sparkles className="w-3 h-3 text-brand-gold" />
+                              <span className="text-[9px] font-bold text-brand-teal uppercase tracking-wider flex items-center gap-1">
+                                <Sparkles className="w-3 h-3 text-brand-teal" />
                                 Resolutions
                               </span>
                               <div className="flex flex-wrap gap-1 mt-0.5">
                                 {spot.resolutions.map((r) => (
                                   <span
                                     key={r}
-                                    className="text-[10px] bg-brand-pink/10 border border-brand-pink/20 text-brand-pink px-2 py-0.5 rounded font-semibold"
+                                    className="text-[10px] bg-brand-teal/10 border border-brand-teal/20 text-brand-teal px-2 py-0.5 rounded font-semibold"
                                   >
                                     {r}
                                   </span>
@@ -374,8 +374,8 @@ export default function HeroVisualizer() {
                             </div>
 
                             {/* Therapy Protocol */}
-                            <div className="flex flex-col gap-1 bg-[#050508]/80 p-3 rounded-lg border border-slate-900/60 text-left">
-                              <p className="text-[11px] leading-5 text-slate-300 font-light">
+                            <div className="flex flex-col gap-1 bg-slate-50 p-3 rounded-lg border border-slate-100 text-left">
+                              <p className="text-[11px] leading-5 text-slate-600 font-light">
                                 {spot.therapy}
                               </p>
                             </div>
@@ -383,7 +383,7 @@ export default function HeroVisualizer() {
                             {/* Redirect Link */}
                             <Link
                               href={spot.link}
-                              className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg text-[11px] font-semibold uppercase tracking-wider text-white bg-brand-pink hover:bg-rose-700 shadow-md shadow-rose-950/20 transition-all duration-300"
+                              className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg text-[11px] font-bold uppercase tracking-widest text-white bg-gradient-to-r from-brand-teal to-indigo-500 hover:opacity-95 shadow-md shadow-teal-500/10 transition-all duration-300"
                             >
                               Explore Treatment
                               <ArrowRight className="w-3.5 h-3.5" />
@@ -414,9 +414,9 @@ export default function HeroVisualizer() {
                 >
                   <div className="relative w-5 h-5 flex items-center justify-center">
                     <div className={`dot-core w-3 h-3 rounded-full transition-all duration-300 ${
-                      isActive || isHovered ? "bg-brand-gold scale-125" : "bg-brand-gold/70"
-                    } shadow-md shadow-amber-500/40`} />
-                    <div className="absolute inset-0 rounded-full border border-brand-gold/50 hotspot-ring pointer-events-none" />
+                      isActive || isHovered ? "bg-brand-lavender scale-125" : "bg-brand-lavender/70"
+                    } shadow-md shadow-indigo-500/40`} />
+                    <div className="absolute inset-0 rounded-full border border-brand-lavender/50 hotspot-ring pointer-events-none" />
                   </div>
                   
                   {/* Floating Micro Tag Tooltip */}
@@ -426,7 +426,7 @@ export default function HeroVisualizer() {
                         initial={{ opacity: 0, scale: 0.9, x: 20 }}
                         animate={{ opacity: 1, scale: 1, x: 10 }}
                         exit={{ opacity: 0, scale: 0.9, x: 20 }}
-                        className="absolute left-full top-1/2 transform -translate-y-1/2 bg-slate-900 border border-slate-800 text-white text-[11px] font-semibold tracking-wider uppercase px-2.5 py-1.5 rounded-md whitespace-nowrap shadow-md z-50 pointer-events-none"
+                        className="absolute left-full top-1/2 transform -translate-y-1/2 bg-[#0f172a] border border-[#0f172a] text-white text-[11px] font-semibold tracking-wider uppercase px-2.5 py-1.5 rounded-md whitespace-nowrap shadow-md z-50 pointer-events-none"
                       >
                         {spot.title}
                       </motion.div>
@@ -444,7 +444,7 @@ export default function HeroVisualizer() {
                         className="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 md:ml-6 w-[290px] sm:w-[320px] md:w-[360px] text-left font-sans z-50 cursor-default"
                         onClick={(e) => e.stopPropagation()} // Prevent closing when tapping inside the card
                       >
-                        <div className="relative glass-panel rounded-[20px] p-6 bg-[#08090d]/95 backdrop-blur-md border border-slate-800/80 shadow-2xl border-l-[4px] border-l-brand-gold">
+                        <div className="relative glass-panel rounded-[20px] p-6 bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-2xl shadow-slate-300/30 border-l-[4px] border-l-brand-lavender">
                           {/* Close Button */}
                           <button
                             onClick={(e) => {
@@ -452,17 +452,17 @@ export default function HeroVisualizer() {
                               setActivePart(null);
                               setActiveSide(null);
                             }}
-                            className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
+                            className="absolute top-4 right-4 text-slate-400 hover:text-brand-lavender transition-colors animate-fade-in"
                           >
                             <X className="w-4 h-4" />
                           </button>
 
-                          <div className="flex flex-col gap-4 text-slate-200">
-                            <div className="border-b border-slate-900/60 pb-2 flex flex-col gap-1 text-left">
-                              <span className="inline-flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full w-fit bg-brand-gold/15 text-brand-gold border border-brand-gold/30">
+                          <div className="flex flex-col gap-4 text-slate-700">
+                            <div className="border-b border-slate-100 pb-2 flex flex-col gap-1 text-left">
+                              <span className="inline-flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full w-fit bg-brand-lavender/10 text-brand-lavender border border-brand-lavender/20">
                                 Female Diagnostics
                               </span>
-                              <h3 className="font-serif text-lg font-bold tracking-wide text-white">
+                              <h3 className="font-serif text-lg font-bold tracking-wide text-slate-900">
                                 {spot.title}
                               </h3>
                             </div>
@@ -470,14 +470,14 @@ export default function HeroVisualizer() {
                             {/* Concerns */}
                             <div className="flex flex-col gap-1 text-left">
                               <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1">
-                                <ShieldAlert className="w-3 h-3 text-brand-gold" />
+                                <ShieldAlert className="w-3 h-3 text-brand-lavender" />
                                 Clinical Concerns
                               </span>
                               <div className="flex flex-wrap gap-1 mt-0.5">
                                 {spot.concerns.map((c) => (
                                   <span
                                     key={c}
-                                    className="text-[10px] bg-slate-950/60 border border-slate-850 text-slate-350 px-2 py-0.5 rounded font-medium"
+                                    className="text-[10px] bg-slate-50 border border-slate-200/60 text-slate-600 px-2 py-0.5 rounded font-medium"
                                   >
                                     {c}
                                   </span>
@@ -487,15 +487,15 @@ export default function HeroVisualizer() {
 
                             {/* Resolutions */}
                             <div className="flex flex-col gap-1 text-left">
-                              <span className="text-[9px] font-bold text-brand-pink uppercase tracking-wider flex items-center gap-1">
-                                <Sparkles className="w-3 h-3 text-brand-pink" />
+                              <span className="text-[9px] font-bold text-brand-teal uppercase tracking-wider flex items-center gap-1">
+                                <Sparkles className="w-3 h-3 text-brand-teal" />
                                 Resolutions
                               </span>
                               <div className="flex flex-wrap gap-1 mt-0.5">
                                 {spot.resolutions.map((r) => (
                                   <span
                                     key={r}
-                                    className="text-[10px] bg-brand-pink/10 border border-brand-pink/20 text-brand-pink px-2 py-0.5 rounded font-semibold"
+                                    className="text-[10px] bg-brand-teal/10 border border-brand-teal/20 text-brand-teal px-2 py-0.5 rounded font-semibold"
                                   >
                                     {r}
                                   </span>
@@ -504,8 +504,8 @@ export default function HeroVisualizer() {
                             </div>
 
                             {/* Therapy Protocol */}
-                            <div className="flex flex-col gap-1 bg-[#050508]/80 p-3 rounded-lg border border-slate-900/60 text-left">
-                              <p className="text-[11px] leading-5 text-slate-300 font-light">
+                            <div className="flex flex-col gap-1 bg-slate-50 p-3 rounded-lg border border-slate-100 text-left">
+                              <p className="text-[11px] leading-5 text-slate-600 font-light">
                                 {spot.therapy}
                               </p>
                             </div>
@@ -513,7 +513,7 @@ export default function HeroVisualizer() {
                             {/* Redirect Link */}
                             <Link
                               href={spot.link}
-                              className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg text-[11px] font-semibold uppercase tracking-wider text-white bg-brand-pink hover:bg-rose-700 shadow-md shadow-rose-950/20 transition-all duration-300"
+                              className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg text-[11px] font-bold uppercase tracking-widest text-white bg-gradient-to-r from-brand-teal to-indigo-500 hover:opacity-95 shadow-md shadow-teal-500/10 transition-all duration-300"
                             >
                               Explore Treatment
                               <ArrowRight className="w-3.5 h-3.5" />
