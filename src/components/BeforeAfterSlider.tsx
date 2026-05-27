@@ -57,7 +57,7 @@ export default function BeforeAfterSlider() {
         alt="Skin After Treatment"
         className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
       />
-      <div className="absolute right-4 bottom-4 bg-slate-900/60 backdrop-blur-md text-white text-[10px] font-bold tracking-wider px-3 py-1.5 rounded-full pointer-events-none uppercase">
+      <div className="absolute right-4 bottom-4 bg-white/85 border border-slate-200/50 backdrop-blur-md text-slate-800 text-[10px] font-bold tracking-wider px-3.5 py-1.5 rounded-full pointer-events-none uppercase">
         After 8 Weeks
       </div>
 
@@ -72,19 +72,19 @@ export default function BeforeAfterSlider() {
           className="absolute inset-0 w-full h-full object-cover max-w-none select-none"
           style={{ width: containerRef.current?.getBoundingClientRect().width }}
         />
-        <div className="absolute left-4 bottom-4 bg-indigo-600/80 backdrop-blur-md text-white text-[10px] font-bold tracking-wider px-3 py-1.5 rounded-full pointer-events-none uppercase">
+        <div className="absolute left-4 bottom-4 bg-brand-teal/85 backdrop-blur-md text-white text-[10px] font-bold tracking-wider px-3.5 py-1.5 rounded-full pointer-events-none uppercase">
           Before
         </div>
       </div>
 
       {/* Center Drag Handle Line */}
       <div
-        className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize flex items-center justify-center z-30"
+        className="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-brand-teal to-brand-lavender cursor-ew-resize flex items-center justify-center z-30"
         style={{ left: `${sliderPosition}%` }}
       >
         {/* Handles Circle */}
-        <div className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center -translate-x-1/2 relative">
-          <svg className="w-4 h-4 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+        <div className="w-9 h-9 rounded-full bg-white border border-slate-250 shadow-lg flex items-center justify-center -translate-x-1/2 relative transition-transform duration-300 hover:scale-105">
+          <svg className="w-3.5 h-3.5 text-brand-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 7l-5 5 5 5M16 7l5 5-5 5" />
           </svg>
         </div>
