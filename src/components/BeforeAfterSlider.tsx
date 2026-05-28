@@ -63,14 +63,13 @@ export default function BeforeAfterSlider() {
 
       {/* Foreground Image: BEFORE (clipped based on slider position) */}
       <div
-        className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none"
-        style={{ width: `${sliderPosition}%` }}
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
       >
         <img
           src="/assets/before_skin.png"
           alt="Skin Before Treatment"
-          className="absolute inset-0 w-full h-full object-cover max-w-none select-none"
-          style={{ width: containerRef.current?.getBoundingClientRect().width }}
+          className="absolute inset-0 w-full h-full object-cover select-none"
         />
         <div className="absolute left-4 bottom-4 bg-brand-teal/85 backdrop-blur-md text-white text-[10px] font-bold tracking-wider px-3.5 py-1.5 rounded-full pointer-events-none uppercase">
           Before
