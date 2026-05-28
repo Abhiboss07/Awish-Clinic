@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  /* Brand Theme Accent Colors (Sophisticated light-themed Rose & Gold) */
+  --color-brand-blue: #d23b56; /* Premium Clinical Rose-Pink */
+  --color-brand-purple: #9333ea;
+  --color-brand-pink: #d23b56; /* Premium Clinical Rose-Pink */
+  --color-brand-gold: #b59365; /* Luxurious Warm Champagne Gold */
+  
+  /* Global Theme Backdrops, Text & Borders */
+  --color-clinic-bg: #f8f9fc; /* Soft clinical off-white */
+  --color-clinic-dark: #0f172a; /* Deep Slate-900 main text */
+  --color-clinic-secondary: #475569; /* Slate-600 subtext */
+  --color-clinic-muted: #64748b; /* Slate-500 muted subtext */
+  --color-clinic-border: rgba(15, 23, 42, 0.08); /* Soft slate borders */
+  --color-clinic-glass: rgba(255, 255, 255, 0.75); /* Soft-white luxury glass backdrop */
+
+  /* Direct Tailwind utility mapping overrides to translate slate blocks to Light Theme instantly */
+  --color-slate-950: #ffffff; /* White background cards */
+  --color-slate-900: #f1f5f9; /* Soft light slate panels */
+  --color-slate-850: #e2e8f0; /* Muted borders */
+  --color-slate-800: #e2e8f0; /* Muted borders */
+  --color-slate-700: #475569; /* Charcoal subtext */
+  --color-slate-350: #334155; /* Highly readable charcoal text */
+  --color-slate-300: #1e293b; /* Deep slate title text */
+  --color-slate-200: #0f172a; /* Slate-900 absolute dark text */
+}
+
+:root {
+  --font-sans: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar Styles (Light Premium Theme) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* Muted light slate */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* Soft gray thumb */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassmorphism helpers (Light Premium Theme) */
+.glass-panel {
+  background: var(--color-clinic-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1.5px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 
+    0 10px 30px rgba(15, 23, 42, 0.03),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.glass-hud {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 
+    0 20px 60px rgba(15, 23, 42, 0.05),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+/* Lenis Smooth Scroll styling */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Subtle Animated Infographic Hotspots */
+.hotspot-ring {
+  animation: pulse-ring 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.5); opacity: 1; }
+  80%, 100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Smooth ambient floating layers (Multiply mode optimized for light theme) */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  filter: blur(130px);
+  pointer-events: none;
+  opacity: 0.05;
+  z-index: 1;
+}
