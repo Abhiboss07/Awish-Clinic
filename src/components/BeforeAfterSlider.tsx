@@ -57,7 +57,7 @@ export default function BeforeAfterSlider() {
         alt="Skin After Treatment"
         className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
       />
-      <div className="absolute right-4 bottom-4 bg-white/85 border border-slate-200/50 backdrop-blur-md text-slate-800 text-[10px] font-bold tracking-wider px-3.5 py-1.5 rounded-full pointer-events-none uppercase">
+      <div className="absolute right-4 bottom-4 bg-white/90 border border-slate-100 backdrop-blur-md text-clinic-dark text-[10px] font-bold tracking-wider px-3.5 py-1.5 rounded-full pointer-events-none uppercase shadow-sm">
         After 8 Weeks
       </div>
 
