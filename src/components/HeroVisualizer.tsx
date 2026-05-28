@@ -234,7 +234,7 @@ export default function HeroVisualizer() {
           <div className="flex items-center gap-4 mt-8 flex-wrap">
             <Link 
               href="#services" 
-              className="inline-flex items-center justify-center font-semibold rounded-full border border-slate-200 bg-white/60 text-slate-700 hover:bg-slate-50 transition-colors px-6 py-4 text-xs uppercase tracking-wider"
+              className="inline-flex items-center justify-center font-semibold rounded-full border border-slate-800 bg-[#08090d]/60 text-slate-200 hover:bg-slate-900 transition-colors px-6 py-4 text-xs uppercase tracking-wider"
             >
               Explore Treatments
             </Link>
@@ -314,7 +314,7 @@ export default function HeroVisualizer() {
                         className="absolute right-full top-1/2 transform -translate-y-1/2 mr-4 md:mr-6 w-[290px] sm:w-[320px] md:w-[360px] text-left font-sans z-50 cursor-default"
                         onClick={(e) => e.stopPropagation()} // Prevent closing when tapping inside the card
                       >
-                        <div className="relative glass-panel rounded-[20px] p-6 bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-2xl shadow-slate-300/30 border-r-[4px] border-r-brand-pink">
+                        <div className="relative glass-panel rounded-[20px] p-6 bg-[#08090d]/95 backdrop-blur-md border border-slate-800/80 shadow-2xl border-r-[4px] border-r-brand-pink">
                           {/* Close Button */}
                           <button
                             onClick={(e) => {
@@ -322,24 +322,24 @@ export default function HeroVisualizer() {
                               setActivePart(null);
                               setActiveSide(null);
                             }}
-                            className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors"
+                            className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
                           >
                             <X className="w-4 h-4" />
                           </button>
 
-                          <div className="flex flex-col gap-4 text-slate-700">
-                            <div className="border-b border-slate-100 pb-2 flex flex-col gap-1 text-left">
+                          <div className="flex flex-col gap-4 text-slate-200">
+                            <div className="border-b border-slate-900/60 pb-2 flex flex-col gap-1 text-left">
                               <span className="inline-flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full w-fit bg-brand-pink/15 text-brand-pink border border-brand-pink/30">
                                 Male Diagnostics
                               </span>
-                              <h3 className="font-serif text-lg font-bold tracking-wide text-slate-900">
+                              <h3 className="font-serif text-lg font-bold tracking-wide text-white">
                                 {spot.title}
                               </h3>
                             </div>
 
                             {/* Concerns */}
                             <div className="flex flex-col gap-1 text-left">
-                              <span className="text-[9px] font-bold text-slate-450 uppercase tracking-wider flex items-center gap-1">
+                              <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1">
                                 <ShieldAlert className="w-3 h-3 text-brand-pink" />
                                 Clinical Concerns
                               </span>
@@ -347,7 +347,7 @@ export default function HeroVisualizer() {
                                 {spot.concerns.map((c) => (
                                   <span
                                     key={c}
-                                    className="text-[10px] bg-slate-50 border border-slate-200 text-slate-600 px-2 py-0.5 rounded font-medium"
+                                    className="text-[10px] bg-slate-950/60 border border-slate-850 text-slate-350 px-2 py-0.5 rounded font-medium"
                                   >
                                     {c}
                                   </span>
@@ -374,8 +374,8 @@ export default function HeroVisualizer() {
                             </div>
 
                             {/* Therapy Protocol */}
-                            <div className="flex flex-col gap-1 bg-slate-50 p-3 rounded-lg border border-slate-100 text-left">
-                              <p className="text-[11px] leading-5 text-slate-600 font-light">
+                            <div className="flex flex-col gap-1 bg-[#050508]/80 p-3 rounded-lg border border-slate-900/60 text-left">
+                              <p className="text-[11px] leading-5 text-slate-300 font-light">
                                 {spot.therapy}
                               </p>
                             </div>
@@ -444,7 +444,7 @@ export default function HeroVisualizer() {
                         className="absolute left-full top-1/2 transform -translate-y-1/2 ml-4 md:ml-6 w-[290px] sm:w-[320px] md:w-[360px] text-left font-sans z-50 cursor-default"
                         onClick={(e) => e.stopPropagation()} // Prevent closing when tapping inside the card
                       >
-                        <div className="relative glass-panel rounded-[20px] p-6 bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-2xl shadow-slate-300/30 border-l-[4px] border-l-brand-gold">
+                        <div className="relative glass-panel rounded-[20px] p-6 bg-[#08090d]/95 backdrop-blur-md border border-slate-800/80 shadow-2xl border-l-[4px] border-l-brand-gold">
                           {/* Close Button */}
                           <button
                             onClick={(e) => {
@@ -452,24 +452,24 @@ export default function HeroVisualizer() {
                               setActivePart(null);
                               setActiveSide(null);
                             }}
-                            className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors"
+                            className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
                           >
                             <X className="w-4 h-4" />
                           </button>
 
-                          <div className="flex flex-col gap-4 text-slate-700">
-                            <div className="border-b border-slate-100 pb-2 flex flex-col gap-1 text-left">
+                          <div className="flex flex-col gap-4 text-slate-200">
+                            <div className="border-b border-slate-900/60 pb-2 flex flex-col gap-1 text-left">
                               <span className="inline-flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full w-fit bg-brand-gold/15 text-brand-gold border border-brand-gold/30">
                                 Female Diagnostics
                               </span>
-                              <h3 className="font-serif text-lg font-bold tracking-wide text-slate-900">
+                              <h3 className="font-serif text-lg font-bold tracking-wide text-white">
                                 {spot.title}
                               </h3>
                             </div>
 
                             {/* Concerns */}
                             <div className="flex flex-col gap-1 text-left">
-                              <span className="text-[9px] font-bold text-slate-450 uppercase tracking-wider flex items-center gap-1">
+                              <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1">
                                 <ShieldAlert className="w-3 h-3 text-brand-gold" />
                                 Clinical Concerns
                               </span>
@@ -477,7 +477,7 @@ export default function HeroVisualizer() {
                                 {spot.concerns.map((c) => (
                                   <span
                                     key={c}
-                                    className="text-[10px] bg-slate-50 border border-slate-200 text-slate-600 px-2 py-0.5 rounded font-medium"
+                                    className="text-[10px] bg-slate-950/60 border border-slate-850 text-slate-350 px-2 py-0.5 rounded font-medium"
                                   >
                                     {c}
                                   </span>
@@ -504,8 +504,8 @@ export default function HeroVisualizer() {
                             </div>
 
                             {/* Therapy Protocol */}
-                            <div className="flex flex-col gap-1 bg-slate-50 p-3 rounded-lg border border-slate-100 text-left">
-                              <p className="text-[11px] leading-5 text-slate-600 font-light">
+                            <div className="flex flex-col gap-1 bg-[#050508]/80 p-3 rounded-lg border border-slate-900/60 text-left">
+                              <p className="text-[11px] leading-5 text-slate-300 font-light">
                                 {spot.therapy}
                               </p>
                             </div>

@@ -79,7 +79,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href="tel:+918287640479"
-              className="flex items-center gap-2 rounded-full border border-slate-200 bg-white/60 text-slate-700 hover:bg-slate-50 transition-colors px-5 py-2 text-[13px] font-semibold shadow-sm"
+              className="flex items-center gap-2 rounded-full border border-slate-800 bg-[#08090d]/60 text-slate-200 hover:bg-slate-900 transition-colors px-5 py-2 text-[13px] font-semibold shadow-sm"
             >
               <PhoneCall className="w-3.5 h-3.5 text-brand-pink" />
               +91 82876 40479
@@ -95,7 +95,7 @@ export default function Header() {
           {/* Mobile Nav Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-slate-700 hover:text-brand-pink transition-colors z-50"
+            className="lg:hidden p-2 text-slate-300 hover:text-brand-pink transition-colors z-50"
             aria-label="Toggle Navigation"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -121,7 +121,7 @@ export default function Header() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`text-2xl font-medium tracking-wide transition-colors ${
-                    isActive ? "text-brand-pink font-bold" : "text-slate-700 hover:text-brand-pink"
+                    isActive ? "text-brand-pink font-bold" : "text-slate-300 hover:text-brand-pink"
                   }`}
                 >
                   {link.name}
@@ -131,7 +131,7 @@ export default function Header() {
             <div className="flex flex-col gap-4 mt-8 w-full max-w-xs px-6">
               <a
                 href="tel:+918287640479"
-                className="flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
+                className="flex items-center justify-center gap-2 rounded-full border border-slate-800 bg-[#08090d]/60 px-5 py-3 text-sm font-semibold text-slate-200 hover:bg-slate-900 transition-colors"
               >
                 <PhoneCall className="w-4 h-4 text-brand-pink" />
                 +91 82876 40479

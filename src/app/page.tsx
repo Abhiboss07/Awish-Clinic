@@ -95,30 +95,30 @@ export default function Home() {
 
 
       {/* ================= ACHIEVEMENTS STATS SECTION ================= */}
-      <section className="py-8 bg-slate-50 border-y border-slate-200/80 relative z-10">
+      <section className="py-8 bg-[#08090d]/50 border-y border-slate-800/40 relative z-10">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           
           <div className="glass-panel rounded-[20px] p-6 text-center">
             <span className="text-[10px] font-bold uppercase tracking-widest text-brand-pink">Satisfied Patients</span>
-            <p className="mt-2 text-3xl font-bold text-clinic-dark lg:text-4xl">30,000+</p>
+            <p className="mt-2 text-3xl font-bold text-white lg:text-4xl">30,000+</p>
             <p className="mt-2 text-[13px] leading-6 text-clinic-secondary font-light">A larger patient base reinforces the trust story associated with our clinic.</p>
           </div>
 
           <div className="glass-panel rounded-[20px] p-6 text-center">
             <span className="text-[10px] font-bold uppercase tracking-widest text-brand-pink">Health Sections</span>
-            <p className="mt-2 text-3xl font-bold text-clinic-dark lg:text-4xl">15+</p>
+            <p className="mt-2 text-3xl font-bold text-white lg:text-4xl">15+</p>
             <p className="mt-2 text-[13px] leading-6 text-clinic-secondary font-light">The clinic positions itself as a broader clinical setup rather than a one-service practice.</p>
           </div>
 
           <div className="glass-panel rounded-[20px] p-6 text-center">
             <span className="text-[10px] font-bold uppercase tracking-widest text-brand-pink">Awards Won</span>
-            <p className="mt-2 text-3xl font-bold text-clinic-dark lg:text-4xl">45+</p>
+            <p className="mt-2 text-3xl font-bold text-white lg:text-4xl">45+</p>
             <p className="mt-2 text-[13px] leading-6 text-clinic-secondary font-light">High-visibility proof points help the homepage feel more established and credible.</p>
           </div>
 
           <div className="glass-panel rounded-[20px] p-6 text-center">
             <span className="text-[10px] font-bold uppercase tracking-widest text-brand-pink">Open All Week</span>
-            <p className="mt-2 text-3xl font-bold text-clinic-dark lg:text-4xl">7 Days</p>
+            <p className="mt-2 text-3xl font-bold text-white lg:text-4xl">7 Days</p>
             <p className="mt-2 text-[13px] leading-6 text-clinic-secondary font-light">The clinic clearly communicates Monday-to-Sunday accessibility across branches.</p>
           </div>
 

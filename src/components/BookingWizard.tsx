@@ -94,11 +94,11 @@ export default function BookingWizard() {
   };
 
   return (
-    <div className="glass-panel p-8 md:p-12 rounded-[32px] bg-white/80 border-slate-200/80 shadow-[0_24px_80px_rgba(15,23,42,0.05)] relative">
+    <div className="glass-panel p-8 md:p-12 rounded-[32px] bg-[#08090d]/60 border-slate-800/60 shadow-[0_24px_80px_rgba(0,0,0,0.6)] relative">
       
       {/* Step Indicator Header */}
       {!isSubmitted && (
-        <div className="flex items-center justify-between gap-2 border-b border-slate-200/80 pb-8 mb-8 overflow-x-auto">
+        <div className="flex items-center justify-between gap-2 border-b border-slate-800/60 pb-8 mb-8 overflow-x-auto">
           {[
             { num: 1, label: "Category" },
             { num: 2, label: "Concern" },
