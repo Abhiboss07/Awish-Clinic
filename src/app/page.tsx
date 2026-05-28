@@ -301,16 +301,28 @@ export default function Home() {
               return (
                 <div 
                   key={idx} 
-                  className="glass-panel rounded-xl overflow-hidden border-slate-200 bg-white/75"
+                  className={`rounded-[20px] border transition-all duration-300 ${
+                    isOpen 
+                      ? "bg-white border-brand-teal/30 shadow-[0_10px_30px_rgba(13,148,136,0.04)]" 
+                      : "bg-white/60 border-slate-100 hover:bg-white hover:border-brand-teal/20 shadow-sm hover:shadow-md"
+                  }`}
                 >
                   <button
                     onClick={() => setOpenFaqIdx(isOpen ? null : idx)}
-                    className="flex items-center justify-between w-full p-5 text-left font-semibold text-slate-800 text-[14.5px] hover:bg-slate-50/50 transition-colors"
+                    className="flex items-center justify-between w-full p-6 text-left transition-colors duration-300 group"
                   >
-                    <span>{faq.q}</span>
-                    <ChevronDown className={`w-4 h-4 text-slate-500 shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-brand-teal" : ""
-                    }`} />
+                    <span className={`font-semibold text-[15px] md:text-base leading-6 transition-colors duration-300 ${
+                      isOpen ? "text-brand-teal" : "text-clinic-dark group-hover:text-brand-teal"
+                    }`}>
+                      {faq.q}
+                    </span>
+                    <div className={`p-1.5 rounded-full transition-all duration-300 ${
+                      isOpen 
+                        ? "bg-brand-teal/10 text-brand-teal rotate-180" 
+                        : "bg-slate-100 text-slate-400 group-hover:bg-brand-teal/5 group-hover:text-brand-teal"
+                    }`}>
+                      <ChevronDown className="w-4 h-4 shrink-0" />
+                    </div>
                   </button>
 
                   <AnimatePresence initial={false}>
@@ -319,9 +331,9 @@ export default function Home() {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
                       >
-                        <div className="px-5 pb-5 pt-1 text-clinic-secondary text-[13.5px] leading-6 font-light border-t border-slate-100">
+                        <div className="px-6 pb-6 pt-2 text-clinic-secondary text-[14.5px] leading-7 font-light border-t border-slate-100/80">
                           {faq.a}
                         </div>
                       </motion.div>
